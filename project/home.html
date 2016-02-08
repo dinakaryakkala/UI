@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> BBC</title>
+<meta charset="utf-8"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+body{
+margin:0;
+padding:0;
+}
+.fixedwidth{
+margin: auto ;
+width:1300px;
+height:40px;
+
+}
+#cover{
+margin:0;
+background-image:url("img/bg.jpg");
+height:1000px;
+background-repeat:no-repeat;
+background-size:cover;
+border-radius:5px;
+}
+nav ul{
+margin:0;
+position:relative;
+left:-10px;
+list-style:none;
+}
+nav ul li{
+margin:0;
+float:left;
+list-style:none;
+padding: 10px 15px 5px 15px;
+color:black;
+border-right: 1px dotted black;
+}
+nav ul li a{
+text-decoration:none;
+color:black;;
+
+}
+#right-ul{
+float:right;
+background-color:white;
+}
+#right-ul li{
+color:black;
+}
+#search{
+background-image:url("img/search.png");
+background-repeat:no-repeat;
+background-position:center right;
+position:relative;
+top:5px;
+left:5px;
+height:20px;
+}
+nav ul li ul{
+display:none;
+position:absolute;
+}
+nav ul li:hover{
+text-decoration:underline;
+}
+nav ul li:nth-child(3){
+border-style:none;
+}
+nav ul li:hover ul {
+display:block;
+background-color:#f1f1f1;
+width:80px;
+height:100px;
+position:relative;
+left:-10px;
+}
+nav ul li ul li a{
+color:green;
+}
+nav ul li ul li{
+margin:0;
+padding:0;
+position:relative;
+left:-20px;
+padding-top:10px;
+border-style:none;
+}
+nav ul li ul li:nth-child(3){
+border-style:none;
+}
+
+
+</style>
+</head>
+<body>
+<div id="container">
+<div class="fixedwidth">
+<nav>
+<ul class="tooltip">
+   <li><a href="home.html">HOME</a></li>
+   <li><a href="about.html">ABOUT</a></li>
+   <li><a href="#">MY WORK </a>
+       <ul class="dropdown">
+	       <li><a href="pictures.html"> Pictures</a></li>
+		   <li><a href="#"> Enroll</a></li>
+		   <li><a href="#"> Programmes</a></li>
+	   </ul>
+   </li>
+</ul>
+<ul id="right-ul">
+   <li><a href="#">Log In</a></li>
+   <input id="search"type="text" placeholder="Search"> </input>
+</ul>
+</nav>
+
+</div>
+<div class="fixedwidth">
+<div id="cover">
+</div>
+</div>
+</div>
+<script>
+$("cover").css("height",$(window).height());
+</script>
+</body>
+</html>

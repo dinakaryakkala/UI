@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> BBC</title>
+<meta charset="utf-8"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+body{
+margin:0;
+padding:0;
+}
+.fixedwidth{
+margin: auto ;
+width:1300px;
+height:40px;
+
+}
+#cover{
+margin:0;
+background-image:url("img/bg.jpg");
+height:1000px;
+background-repeat:no-repeat;
+background-size:cover;
+border-radius:5px;
+}
+nav ul{
+margin:0;
+position:relative;
+left:-10px;
+list-style:none;
+}
+nav ul li{
+margin:0;
+float:left;
+list-style:none;
+padding: 10px 15px 5px 15px;
+color:black;
+border-right: 1px dotted black;
+}
+nav ul li a{
+text-decoration:none;
+color:black;;
+
+}
+#right-ul{
+float:right;
+background-color:white;
+}
+#right-ul li{
+color:black;
+}
+#search{
+background-image:url("img/search.png");
+background-repeat:no-repeat;
+background-position:center right;
+position:relative;
+top:5px;
+left:5px;
+height:20px;
+}
+nav ul li ul{
+display:none;
+position:absolute;
+}
+nav ul li:hover{
+text-decoration:underline;
+}
+nav ul li:nth-child(3){
+border-style:none;
+}
+nav ul li:hover ul {
+display:block;
+background-color:#f1f1f1;
+width:80px;
+height:100px;
+position:relative;
+left:-10px;
+}
+nav ul li ul li a{
+color:green;
+}
+nav ul li ul li{
+margin:0;
+padding:0;
+position:relative;
+left:-20px;
+padding-top:10px;
+border-style:none;
+}
+nav ul li ul li:nth-child(3){
+border-style:none;
+}
+#about{
+float:left;
+}
+#about img{
+height:300px;
+width:300px;
+border-radius:5px;
+border:2px solid black;
+}
+#about img:hover{
+border-radius:300px;
+border:2px dotted black;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<div class="fixedwidth">
+<nav>
+<ul>
+   <li><a href="home.html">HOME</a></li>
+   <li><a href="about.html">ABOUT</a></li>
+   <li><a href="#">MY WORK </a>
+       <ul class="dropdown">
+	       <li><a href="pictures.html"> Pictures</a></li>
+		   <li><a href="#"> Enroll</a></li>
+		   <li><a href="#"> Programmes</a></li>
+	   </ul>
+   </li>
+</ul>
+<ul id="right-ul">
+   <li><a href="#">Log In</a></li>
+   <input id="search"type="text" placeholder="Search"> </input>
+</ul>
+</nav>
+
+</div>
+<div class="fixedwidth">
+<div id="about">
+<img src="img/1.jpg"/>
+<h2>This is about me!!!</h2>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis massa quis ipsum rhoncus porttitor. Vivamus nec diam nisl. Aliquam nec risus efficitur velit sollicitudin faucibus ut non tortor. Proin id blandit velit, sagittis porttitor nulla. Proin lobortis ante auctor rhoncus ultrices. Nulla mattis quam ac eros rutrum vulputate. Nullam ac nisl semper, commodo dolor vel, bibendum mauris. Nam feugiat arcu erat, et finibus diam pharetra nec. Praesent molestie mauris ipsum. Curabitur non ex quis turpis dictum semper. Etiam maximus dui quis magna mollis commodo. Vivamus vitae nunc dolor. Quisque aliquam sapien et tellus scelerisque, eu dictum ligula auctor. Aliquam pharetra justo at dui consequat, sit amet tempus est interdum. 
+
+Donec sed nisl nulla. Vestibulum luctus turpis nulla, quis ornare massa vestibulum nec. Donec mattis aliquam neque, nec convallis dolor tristique vitae. Mauris sed justo malesuada, viverra velit id, blandit orci. Nunc a nibh eget dui consectetur mattis. Aliquam consectetur pellentesque velit, eget porttitor urna tempor ut. Ut ut odio a leo eleifend lacinia sed at purus. In ac dictum mauris. Donec ac ante lacus. Cras diam neque, semper quis varius eu, porta nec neque. Mauris ac ante eget eros vehicula accumsan. Donec in magna vitae ipsum feugiat pellentesque at sed urna. Sed mattis justo ac tellus faucibus convallis. 
+
+Integer risus orci, maximus ac tincidunt quis, iaculis ut libero. Sed in urna ligula. Sed aliquet eleifend metus sed molestie. Nunc fermentum convallis felis, nec tincidunt dolor semper sit amet. Etiam egestas ante non fringilla facilisis. Maecenas blandit pretium elit, non tempus quam tincidunt sit amet. Pellentesque non ex sit amet nisi tristique dapibus quis vel ipsum. Nam urna enim, ornare in convallis at, faucibus non sapien. Aliquam condimentum ullamcorper tellus, non sodales nulla pharetra vitae. 
+
+Cras gravida pellentesque posuere. Fusce ante neque, imperdiet quis iaculis sed, accumsan vitae lacus. Suspendisse dapibus ligula ut porttitor varius. Integer mollis sapien at tortor bibendum, nec pharetra magna commodo. Nullam facilisis nisl pretium elementum interdum. Quisque rhoncus fermentum nisl. Donec accumsan nibh neque, ut pulvinar ipsum vulputate quis. Cras vel viverra diam, id hendrerit massa. 
+
+In luctus augue non ipsum lacinia efficitur. Aliquam justo libero, efficitur vitae nunc non, ultricies pretium tellus. Morbi eget ipsum ut enim porta convallis. Ut interdum ornare tortor vel mattis. Proin porttitor mi sit amet sapien cursus convallis. Aliquam convallis a ante id varius. Etiam sed lectus id magna varius scelerisque quis sed tellus. 
+
+
+</p>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
