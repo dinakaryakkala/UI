@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> BBC</title>
+<meta charset="utf-8"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+body{
+margin:0;
+padding:0;
+}
+.fixedwidth{
+margin: auto ;
+width:1300px;
+height:40px;
+
+}
+#cover{
+margin:0;
+background-image:url("img/bg.jpg");
+height:1000px;
+background-repeat:no-repeat;
+background-size:cover;
+border-radius:5px;
+}
+nav ul{
+margin:0;
+position:relative;
+left:-10px;
+list-style:none;
+}
+nav ul li{
+margin:0;
+float:left;
+list-style:none;
+padding: 10px 15px 5px 15px;
+color:black;
+border-right: 1px dotted black;
+}
+nav ul li a{
+text-decoration:none;
+color:black;;
+
+}
+#right-ul{
+float:right;
+background-color:white;
+}
+#right-ul li{
+color:black;
+}
+#search{
+background-image:url("img/search.png");
+background-repeat:no-repeat;
+background-position:center right;
+position:relative;
+top:5px;
+left:5px;
+height:20px;
+}
+nav ul li ul{
+display:none;
+position:absolute;
+}
+nav ul li:hover{
+text-decoration:underline;
+}
+nav ul li:nth-child(3){
+border-style:none;
+}
+nav ul li:hover ul {
+display:block;
+background-color:#f1f1f1;
+width:80px;
+height:100px;
+position:relative;
+left:-10px;
+}
+nav ul li ul li a{
+color:green;
+}
+nav ul li ul li{
+margin:0;
+padding:0;
+position:relative;
+left:-20px;
+padding-top:10px;
+border-style:none;
+}
+nav ul li ul li:nth-child(3){
+border-style:none;
+}
+section ul{
+margin:0;
+padding-left:0;
+}
+section ul li{
+padding-left:0px;
+padding-right:0px;
+}
+section ul li {
+list-style:none;
+float:left;
+text-align:center;
+margin:0;
+z-index:1;
+}
+
+section ul li img{
+height:200px;
+width:200px;
+margin:5px;
+border-radius:5px;
+
+}
+section ul li a{
+text-decoration:none;
+color:#000;
+}
+section ul li:hover{
+display:block;
+}
+section ul li:nth-child(7n) {
+clear:left;
+}
+#submit{
+position:relative;
+left:10px;
+top:4px;
+}
+
+</style>
+<script>
+function myfunction(){
+var abs =document.getElementById("search").value ;
+var arr =['pic1','pic2','pic3','pic4','pic5','pic6','pic7','pic8'];
+if(arr[0]==abs){
+document.getElementById("pic1").style.visibility = "visible";
+
+document.getElementById("pic2").style.visibility = "hidden";
+document.getElementById("pic3").style.visibility = "hidden";
+document.getElementById("pic4").style.visibility = "hidden";
+document.getElementById("pic5").style.visibility = "hidden";
+document.getElementById("pic6").style.visibility = "hidden";
+document.getElementById("pic7").style.visibility = "hidden";
+document.getElementById("pic8").style.visibility = "hidden";
+}
+if(arr[1]==abs){
+document.getElementById("pic1").style.visibility = "hidden";
+
+document.getElementById("pic2").style.visibility = "visible";
+document.getElementById("pic3").style.visibility = "hidden";
+document.getElementById("pic4").style.visibility = "hidden";
+document.getElementById("pic5").style.visibility = "hidden";
+document.getElementById("pic6").style.visibility = "hidden";
+document.getElementById("pic7").style.visibility = "hidden";
+document.getElementById("pic8").style.visibility = "hidden";
+}
+if(arr[2]==abs){
+document.getElementById("pic1").style.visibility = "hidden";
+
+document.getElementById("pic2").style.visibility = "hidden";
+document.getElementById("pic3").style.visibility = "visible";
+document.getElementById("pic4").style.visibility = "hidden";
+document.getElementById("pic5").style.visibility = "hidden";
+document.getElementById("pic6").style.visibility = "hidden";
+document.getElementById("pic7").style.visibility = "hidden";
+document.getElementById("pic8").style.visibility = "hidden";
+
+}
+if(arr[3]==abs){
+document.getElementById("pic1").style.visibility = "hidden";
+
+document.getElementById("pic2").style.visibility = "hidden";
+document.getElementById("pic3").style.visibility = "hidden";
+document.getElementById("pic4").style.visibility = "visible";
+document.getElementById("pic5").style.visibility = "hidden";
+document.getElementById("pic6").style.visibility = "hidden";
+document.getElementById("pic7").style.visibility = "hidden";
+document.getElementById("pic8").style.visibility = "hidden";
+
+}
+if(arr[4]==abs){
+document.getElementById("pic1").style.visibility = "hidden";
+
+document.getElementById("pic2").style.visibility = "hidden";
+document.getElementById("pic3").style.visibility = "hidden";
+document.getElementById("pic4").style.visibility = "hidden";
+document.getElementById("pic5").style.visibility = "visible";
+document.getElementById("pic6").style.visibility = "hidden";
+document.getElementById("pic7").style.visibility = "hidden";
+document.getElementById("pic8").style.visibility = "hidden";
+
+}
+if(arr[5]==abs){
+document.getElementById("pic1").style.visibility = "hidden";
+
+document.getElementById("pic2").style.visibility = "hidden";
+document.getElementById("pic3").style.visibility = "hidden";
+document.getElementById("pic4").style.visibility = "hidden";
+document.getElementById("pic5").style.visibility = "hidden";
+document.getElementById("pic6").style.visibility = "visible";
+document.getElementById("pic7").style.visibility = "hidden";
+document.getElementById("pic8").style.visibility = "hidden";
+
+}
+if(arr[6]==abs){
+document.getElementById("pic1").style.visibility = "hidden";
+
+document.getElementById("pic2").style.visibility = "hidden";
+document.getElementById("pic3").style.visibility = "hidden";
+document.getElementById("pic4").style.visibility = "hidden";
+document.getElementById("pic5").style.visibility = "hidden";
+document.getElementById("pic6").style.visibility = "hidden";
+document.getElementById("pic7").style.visibility = "visible";
+document.getElementById("pic8").style.visibility = "hidden";
+
+}
+if(arr[7]==abs){
+document.getElementById("pic1").style.visibility = "hidden";
+
+document.getElementById("pic2").style.visibility = "hidden";
+document.getElementById("pic3").style.visibility = "hidden";
+document.getElementById("pic4").style.visibility = "hidden";
+document.getElementById("pic5").style.visibility = "hidden";
+document.getElementById("pic6").style.visibility = "hidden";
+document.getElementById("pic7").style.visibility = "hidden";
+document.getElementById("pic8").style.visibility = "visible";
+
+}
+
+}
+
+
+
+</script>
+</head>
+<body>
+<div id="container">
+<div class="fixedwidth">
+<nav>
+<ul>
+   <li><a href="home.html">HOME</a></li>
+   <li><a href="about.html">ABOUT</a></li>
+   <li><a href="#">MY WORK </a>
+        <ul class="dropdown">
+	       <li><a href="pictures.html"> Pictures</a></li>
+		   <li><a href="#"> Enroll</a></li>
+		   <li><a href="#"> Programmes</a></li>
+	   </ul>
+   </li>
+</ul>
+<ul id="right-ul">
+   <li><a href="#">Log In</a></li>
+   <input id="search"type="text" placeholder="Search"> </input>
+   <button id="submit" onclick="myfunction()">search</button>
+</ul>
+</nav>
+
+</div>
+<div class="fixedwidth">
+<section>
+<h3>This is my work!!!</h3>
+<ul>
+<li id="pic1">
+<a href="img/1.jpg">
+<img src="img/1.jpg" alt=""/>
+</a>
+<div class="hide">Pic 1!! </div>
+</li>
+<li id="pic2">
+<a href="img/2.jpg">
+<img src="img/2.jpg" alt=""/>
+<div class="hide">Pic 2 !!!</div>
+</a>
+</li>
+<li id="pic3">
+<a href="img/3.jpg">
+<img src="img/3.jpg" alt=""/>
+<div>Pic 3 !!!</div>
+</a>
+</li>
+<li id="pic4">
+<a href="img/4.jpg">
+<img src="img/4.jpg" alt=""/>
+<div>Pic 4 !!!</div>
+</a>
+</li>
+<li id="pic5">
+<a href="img/5.jpg">
+<img src="img/5.jpg" alt=""/>
+<div>Pic 5 !!!</div>
+</a>
+</li>
+<li id="pic6">
+<a href="img/6.jpg">
+<img src="img/6.jpg" alt=""/>
+<div>Pic 6 !!!</div>
+</a>
+</li>
+<li id="pic7">
+<a href="img/7.jpg">
+<img src="img/7.jpg" alt=""/>
+<div>Pic 7 !!!</div>
+</a>
+</li>
+<li id="pic8">
+<a href="img/8.jpg">
+<img src="img/8.jpg" alt=""/>
+<div>Pic 8 !!!</div>
+</a>
+</li>
+</ul>
+</section>
+</div>
+</div>
+<script>
+</script>
+</body>
+</html>
