@@ -133,10 +133,10 @@ top:4px;
 </style>
 <script>
 function myfunction(){
-var abs =document.getElementById("search").value ;
-var arr =['pic1','pic2','pic3','pic4','pic5','pic6','pic7','pic8'];
-if(arr[0]==abs){
-document.getElementById("pic1").style.visibility = "visible";
+var abs =document.getElementById("search").value ;                        // value entered by the user in search box....
+var arr =['pic1','pic2','pic3','pic4','pic5','pic6','pic7','pic8'];       // created an array for 8 pics...
+if(arr[0]==abs){                                                          // if the enetered user value = pic1 then run the if loop....
+document.getElementById("pic1").style.visibility = "visible";             // After user presses the search button only that pic should appear remaining should be hidden..... 
 
 document.getElementById("pic2").style.visibility = "hidden";
 document.getElementById("pic3").style.visibility = "hidden";
