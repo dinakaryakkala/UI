@@ -1,0 +1,59 @@
+html , body{
+height: 100%;
+}
+
+.navbar{                                        //thought of making nav bar opaque ...but it was not possible....
+	height: 60px;
+    width: 100%;
+	background-color: rgba(0,0,0,0.5);
+
+}
+
+
+.secone{
+	background-color: aqua;
+	height: 100%;
+	background-image: url("img/pic1.jpg");
+	width: 100%;
+	background-size:cover;
+	background-attachment: fixed;
+
+}
+.sectwo{
+	background-color: aqua;
+	height: 100%;
+	background-image: url("img/pic2.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+}
+.secthree{
+	background-color: aqua;
+	height: 100%;
+	background-image: url("img/pic3.jpg");
+	background-size:cover;
+	background-attachment: fixed;
+
+}
+.secfour{
+	background-color: aqua;
+	height: 100%;
+	background-image: url("img/pic4.jpg");
+	background-size:cover;
+	background-attachment: fixed;
+
+}
+.subsec{
+	height: 50%;
+	background-color: bisque;
+
+}
+footer {
+
+color:black;
+text-decoration: none;
+text-align: center;
+}
+footer a{
+ color: black;
+ text-decoration: none;
+}
